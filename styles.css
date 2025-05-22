@@ -1,0 +1,126 @@
+* {
+	font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+	justify-content: center;
+	text-align: center;
+	border-radius: 100px;
+}
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("Background_10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con transparencia */
+    box-shadow: 10px 10px 10px rgba(0.5, 0.5, 0.5, 0.5); /* Mejorar sombra */
+    width: 500px;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 5px;
+}
+
+h1, h5 {
+    text-align: center;
+    color: #333;
+}
+
+input, button {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px auto; /* Centrado automático */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1ba258;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Todas las secciones, excepto la primera, están ocultas */
+section {
+    display: none;
+}
+
+/* La sección activa se muestra */
+section.active {
+    display: block;
+}
+
+/* El formulario siempre está visible */
+#Formulario {
+    display: block;
+}
+
+/* Contenedor de Preguntas (Fe en Jesucristo_0.html) */
+#question-container {
+	margin: 20px 0;
+	}
+
+/* Button (Fe en Jesucristo.html) */
+#startBtn, #respuestas {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 100px;
+            cursor: pointer;
+}
+/* Menú lateral */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1000;
+        }
+
+        .sidebar a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 30px;
+        }
+
+        .menu-button {
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 1001;
+        }
